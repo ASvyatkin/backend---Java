@@ -37,7 +37,7 @@ public class GetComplexSearch extends AbstractTest {
         JsonPath response = given()
                 .queryParam("apiKey", getApiKey())
                 .queryParam("minVitaminB1", "5")
-                .queryParam("minVitaminB2", "1")
+                .queryParam("minVitaminB2", "lesson4/builder")
                 .queryParam("minVitaminB5", "10")
                 .when()
                 .get(getBaseUrl() + "/recipes/complexSearch")
